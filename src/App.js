@@ -7,7 +7,6 @@ import ReactFlow, {
   applyNodeChanges,
 } from "reactflow";
 
-import { useDispatch, useSelector } from "react-redux";
 import CustomEdge from "./components/CustomEdge";
 
 import "reactflow/dist/style.css";
@@ -20,7 +19,6 @@ const edgeTypes = {
 };
 
 function App() {
-  const dispatch = useDispatch();
   const [nodes, setNodes] = useState(initialNodes);
   const [edges, setEdges] = useState(initialEdges);
 
